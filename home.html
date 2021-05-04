@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="bankscript.js"></script>
+<link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <h1 class="titl">Welcome User</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="">Account Number</label>
+                    <input type="text" class="form-control" id="acno">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="Password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="">Amount</label>
+                    <input type="text" class="form-control" id="amt" >
+                </div>
+                <div class="butt">
+                    <button class="btn btn-success" type="button" onclick="Bank.deposit()">Deposit</button> 
+                <button class="btn btn-primary" type="button" onclick="Bank.withdraw()">Withdraw</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- static withdraw(){
+    var accno=document.querySelector("#acno").value
+    var password=document.querySelector("#pwd").value
+    var amount=document.querySelector("#amt").value
+    let wth=Bank.authenticate(accno,password,amount)
+    if(wth==0){
+        alert("invalid password")
+    }
+    else if(wth==1){
+        alert("withdrawn"+amount+"from balance")
+    }
+    else if(wth==-1){
+        alert("invalid accountnumber")
+    }
+
+}
+static deposit(){
+    var accno=document.querySelector("#acno").value
+    var password=document.querySelector("#pwd").value
+    var amount=document.querySelector("#amt").value
+    let wth=Bank.authenticate(accno,password,amount)
+    if(wth==0){
+        alert("invalid password")
+    }
+    else if(wth==1){
+        alert("deposited"+amount+"into balance")
+    }
+    else if(wth==-1){
+        alert("invalid accountnumber")
+    }
+
+} -->

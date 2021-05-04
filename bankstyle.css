@@ -1,0 +1,19 @@
+.img{
+    background-image: url(bankimg.jpg);
+}
+.font{
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    top: 50px;
+}
+.hed{
+    position: relative;
+    left: 20px;
+}
+.form-control{
+    width: 400px;
+}
+.side{
+    position: relative;
+    left: 20px;
+}
